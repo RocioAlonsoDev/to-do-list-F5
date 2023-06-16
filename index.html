@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="public/styles.css">
 </head>
 <body>
-    
+    <main>
+        <section id="create-todo">  
+            <h1>To-do list</h1>
+            <form id="new-task-form">
+                <input type="text" placeholder="add a new task here..." name="newTask" id="newTask">
+                <h2>Category</h2>
+                <div id="categories-options">
+                    <label>
+                        <input type="radio" name="category" value="business">
+                        <p>Business</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="studies">
+                        <p>Studies</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="home">
+                        <p>Home</p>
+                    </label>
+                </div>
+                <input type="submit" value="Add task">
+            </form>
+        </section>
+        <section id="todo-list">
+            <h2>My Tasks</h2>
+            <div id="list"></div>
+        </section>
+
+    </main>
 </body>
 </html>
