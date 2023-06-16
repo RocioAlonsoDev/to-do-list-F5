@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.63.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watcher": "npx sass --watch src/styles/styles.scss:public/styles.css"
+  }
+}
