@@ -1,3 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: rgb(46, 44, 43);
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body main {
+  background-color: rgb(254, 240, 220);
+  border-radius: 10px;
+  max-width: 470px;
+  margin: auto;
+}
+body main section#create-todo h1 {
+  background-color: rgb(234, 157, 90);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  font-weight: 400;
+  color: rgb(46, 44, 43);
+}
+body main section#create-todo form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+body main section#create-todo form h2 {
+  padding-top: 15px;
+  color: rgb(46, 44, 43);
+  align-self: flex-start;
+  font-size: 15px;
+}
+body main section#create-todo form input#new-task {
+  background-color: rgb(254, 240, 220);
+  color: rgb(46, 44, 43);
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: initial;
+}
+body main section#create-todo form input#new-task:focus {
+  border: none;
+}
+body main section#create-todo form div#category-options {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+body main section#create-todo form div#category-options #business {
+  background-color: rgb(190, 171, 199);
+}
+body main section#create-todo form div#category-options #studies {
+  background-color: rgb(168, 214, 147);
+}
+body main section#create-todo form div#category-options #home {
+  background-color: rgb(158, 210, 210);
+}
+body main section#create-todo form div#category-options label {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  width: 30%;
+  padding: 3px;
+}
+body main section#create-todo form input#submit {
+  background-color: rgb(234, 157, 90);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 35px;
+}
+body main section#create-todo form input#submit:hover {
+  background-color: rgb(255, 179, 129);
+}
+body main section#todo-list {
+  width: 90%;
+  margin: auto;
+}
+body main section#todo-list h2 {
+  margin-top: 15px;
+  padding: 15px 0;
+  color: rgb(46, 44, 43);
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=styles.css.map */

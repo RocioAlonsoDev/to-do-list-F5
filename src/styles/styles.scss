@@ -1,0 +1,114 @@
+@import '_variables.scss';
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+
+    background-color: $dark;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    main{
+        background-color: $main;
+        border-radius: 10px;
+        max-width: 470px;
+        margin:auto;
+
+        section#create-todo{
+
+            h1{
+                background-color: $orange;
+                border-radius: 10px 10px 0  0;
+                padding: 20px;
+                font-weight: 400;
+                color: $dark;
+            }
+
+            form{
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+
+                h2{
+                    padding-top: 15px;
+                    color: $dark;
+                    align-self: flex-start;
+                    font-size: 15px;
+                }
+
+                input#new-task{
+                    background-color: $main;
+                    color: $dark;
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    cursor: initial;
+                }
+
+                input#new-task:focus{
+                    border:none;
+                }
+
+                div#category-options{
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    width: 100%;
+
+                    #business{
+                        background-color: rgb(190, 171, 199);
+                    }
+
+                    #studies{
+                        background-color: rgb(168, 214, 147);
+                    }
+                    
+                    #home{
+                        background-color: rgb(158, 210, 210);
+                    }
+
+                    label{
+                        display: flex;
+                        justify-content: center;
+                        gap: 5px;
+                        border-radius: 5px;
+                        width: 30%;
+                        padding: 3px;
+                    }
+                }
+
+                input#submit {
+                    background-color: $orange;
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    height: 35px;
+                }
+
+                input#submit:hover {
+                    background-color: rgb(255, 179, 129);
+                }
+            }
+        }
+
+        section#todo-list{
+            width: 90%;
+            margin:auto;
+
+            h2{
+                margin-top: 15px;
+                padding: 15px 0;
+                color: $dark;
+                font-size: 15px;
+            }
+        }
+    }
+}
